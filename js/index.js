@@ -30,20 +30,30 @@ window.addEventListener('DOMContentLoaded', () => {
   // Basic ideas from https://code-boxx.com/simple-javascript-quiz/
   const quizArray = [
     {
-      q: 'Which is the third planet from the sun?',
+      q: 'Which is the third planet from the Sun?',
       o: ['Saturn', 'Earth', 'Pluto', 'Mars'],
       a: 1, // array index 1 - so Earth is the correct answer here
     },
     {
       q: 'Which is the largest ocean on Earth?',
       o: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
-      a: 3,
+      a: 3, // pacific ocean
     },
     {
-      q: 'What is the capital of Australia',
+      q: 'What is the capital of Australia?',
       o: ['Sydney', 'Canberra', 'Melbourne', 'Perth'],
-      a: 1,
+      a: 1, // Canberra
     },
+    {
+      q: 'What is the biggest planet in our solar system?',
+      o: ['Pluto', 'Sun', 'Jupiter', 'Saturn'],
+      a: 2, // Answer
+    },
+    {
+      q: 'What is the hottest planet in our solar system?',
+      o: ['Jupiter', 'Neptune', 'Sun', 'Venus'],
+      a: 3, // Answer
+    },    
   ];
 
   // function to Display the quiz questions and answers from the object
