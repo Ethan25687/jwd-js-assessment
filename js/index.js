@@ -51,8 +51,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     {
       q: 'What is the hottest planet in our solar system?',
-      o: ['Jupiter', 'Neptune', 'Sun', 'Venus'],
-      a: 3, // Answer
+      o: ['Venus', 'Neptune', 'Sun', 'Uranus'],
+      a: 0, // Answer
     },    
   ];
 
