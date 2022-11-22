@@ -101,4 +101,4 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-getElementById(btnReset).onclick=window.location.reload();  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁 -->
+btnReset.onclick= () => {window.location.reload()};  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁 -->
