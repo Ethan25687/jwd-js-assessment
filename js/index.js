@@ -7,10 +7,10 @@
   The tasks you need to do are below.
 
     TASKS TODO:
-      1. Calculate the score as the total of the number of correct answers
+      1. Calculate the score as the total of the number of correct answers ✔
 
       2. Add an Event listener for the submit button, which will display the score and highlight 
-         the correct answers when the button is clicked. Use the code from lines 77 to 96 to help you.
+         the correct answers when the button is clicked. Use the code from lines 77 to 96 to help you. ✔
 
       3. Add 2 more questions to the app (each question must have 4 options). ✔
 
@@ -86,14 +86,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (quizItem.a == i) {
           //change background color of li element here
-          liElement.style.backgroundColor = '#fceea7';
+          liElement.style.backgroundColor = '#fceea7'; // once submitted, displays correct answers in a warm yellow
+        } else {
+          liElement.style.backgroundColor = '#FFB6C1'; // once submitted, displays correct answers in a soft pink
         }
 
         if (radioElement.checked) {
           // code for task 1 goes here
           if (quizItem.a == i) {
-            score += 1;
-            document.getElementById('score').innerHTML = `You got ${score}/5 correct! Attempt Submitted.`
+            score += 20; // increments score variable by 20
+            document.getElementById('score').innerHTML = `You got ${score}% correct! Attempt Submitted.` // displays score message out of 100% to the right of buttons
           }
         }
       }
@@ -101,7 +103,11 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   displayQuiz();
-  btnSubmit.onclick = () => {calculateScore()} // upon clicking the Submit button, invokes caculateScore function
+  // Submit Button Function:
+  btnSubmit.onclick = () => {calculateScore()} // upon clicking the Submit button, invokes calculateScore function
 });
 
+// Reset Button Function:
 btnReset.onclick = () => {window.location.reload()};  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁
+
+// Countdown Timer:
