@@ -110,4 +110,20 @@ window.addEventListener('DOMContentLoaded', () => {
 // Reset Button Function:
 btnReset.onclick = () => {window.location.reload()};  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁
 
-// Countdown Timer:
+// // Countdown Timer: Doesn't work 😢
+// btnStart.onclick = () => {const startingTimeInMinutes = 1;
+// let TimeInSeconds = startingTimeInMinutes * 60;
+
+// const timeEl = document.getElementById('time');
+
+// setInterval(updateTime, 1000);
+
+// updateTime = () => {
+//   const minutes = math.floor(TimeInSeconds)
+//   let seconds = TimeInSeconds % 60;
+
+//   seconds = seconds < 10 ? '0' + seconds : seconds;
+
+//   timeEl.innerHTML = `${minutes}: ${seconds}`
+//   time--;
+// }} 
