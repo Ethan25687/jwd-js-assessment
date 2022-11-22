@@ -86,19 +86,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (quizItem.a == i) {
           //change background color of li element here
-          
+          liElement.style.backgroundColor = '#fceea7';
         }
 
         if (radioElement.checked) {
           // code for task 1 goes here
-          
+          if (quizItem.a == i) {
+
+          }
         }
       }
     });
   };
 
   displayQuiz();
+  btnSubmit.onclick = () => {calculateScore()} // upon clicking the Submit button, invokes caculateScore function
 });
 
-
-btnReset.onclick= () => {window.location.reload()};  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁 -->
+btnReset.onclick = () => {window.location.reload()};  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁
