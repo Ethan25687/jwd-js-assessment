@@ -14,7 +14,7 @@
 
       3. Add 2 more questions to the app (each question must have 4 options). ✔
 
-      4. Reload the page when the reset button is clicked (hint: search window.location)
+      4. Reload the page when the reset button is clicked (hint: search window.location) ✔
 
       5. Add a countdown timer - when the time is up, end the quiz, display the score and highlight the correct answers
 *************************** */
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       q: 'Which is the largest ocean on Earth?',
       o: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
-      a: 3, // pacific ocean
+      a: 3, // Pacific Ocean
     },
     {
       q: 'What is the capital of Australia?',
@@ -47,12 +47,12 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       q: 'What is the biggest planet in our solar system?',
       o: ['Pluto', 'Sun', 'Jupiter', 'Saturn'],
-      a: 2, // Answer
+      a: 2, // Jupiter
     },
     {
       q: 'What is the hottest planet in our solar system?',
       o: ['Venus', 'Neptune', 'Sun', 'Uranus'],
-      a: 0, // Answer
+      a: 0, // Venus
     },    
   ];
 
@@ -86,10 +86,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (quizItem.a == i) {
           //change background color of li element here
+          
         }
 
         if (radioElement.checked) {
           // code for task 1 goes here
+          
         }
       }
     });
@@ -98,4 +100,5 @@ window.addEventListener('DOMContentLoaded', () => {
   displayQuiz();
 });
 
-document.getElementById(btnReset).onclick = window.location;
+
+getElementById(btnReset).onclick=window.location.reload();  // this refreshes the page once the reset button is clicked, therefore the quiz refreshes! 😁 -->
