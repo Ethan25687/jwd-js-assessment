@@ -92,7 +92,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (radioElement.checked) {
           // code for task 1 goes here
           if (quizItem.a == i) {
-
+            score += 1;
+            document.getElementById('score').innerHTML = `You got ${score}/5 correct! Attempt Submitted.`
           }
         }
       }
